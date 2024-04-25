@@ -40,7 +40,7 @@ function runQuiz() {
     function askQuestion(index) {
         if (index === questions.length) {
             console.log(chalk.bold.bgCyanBright(`\t\t\tQuiz finished! Your score is: ${score}/${questions.length}`));
-            //return;
+            return;
         }
         const { question, choices, answer } = questions[index];
         inquirer.prompt([
